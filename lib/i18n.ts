@@ -1,9 +1,15 @@
 export type Language = "zh" | "en";
 
-/** Section values can be flat (string) or nested (e.g. about.donate, about.share). */
-type Section = Record<string, string | Record<string, string>>;
+/** About section can have string values and nested objects (donate, share). */
+type AboutSection = Record<string, string | Record<string, string>>;
 
-export const translations: Record<Language, Record<string, Section>> = {
+export type LangTranslations = {
+  common: Record<string, string>;
+  home: Record<string, string>;
+  about: AboutSection;
+};
+
+export const translations: Record<Language, LangTranslations> = {
   zh: {
     common: {
       appName: "剪贴板穿梭机",
