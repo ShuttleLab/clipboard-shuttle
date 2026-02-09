@@ -1,7 +1,31 @@
 export type Language = "zh" | "en";
 
-/** About section can have string values and nested objects (donate, share). */
-type AboutSection = Record<string, string | Record<string, string>>;
+export type AboutSection = {
+  heroTitle: string;
+  heroSubtitle: string;
+  serviceTitle: string;
+  serviceP1: string;
+  serviceP2: string;
+  safe: string;
+  safeDesc: string;
+  privacy: string;
+  privacyDesc: string;
+  ttl: string;
+  ttlDesc: string;
+  fast: string;
+  fastDesc: string;
+  useCases: string;
+  use1: string;
+  use2: string;
+  use3: string;
+  contactTitle: string;
+  contactDesc: string;
+  contactEmail: string;
+  supportTitle: string;
+  supportDesc: string;
+  donate: Record<string, string>;
+  share: Record<string, string>;
+};
 
 export type LangTranslations = {
   common: Record<string, string>;
