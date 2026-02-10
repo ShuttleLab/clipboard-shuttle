@@ -36,8 +36,8 @@ export type LangTranslations = {
 export const translations: Record<Language, LangTranslations> = {
   zh: {
     common: {
-      appName: "剪贴板穿梭机",
-      sync: "同步剪贴板",
+      appName: "ShuttleLab",
+      sync: "使用剪贴板",
       about: "关于",
       toggleLabel: "中/EN",
     },
@@ -106,8 +106,8 @@ export const translations: Record<Language, LangTranslations> = {
   },
   en: {
     common: {
-      appName: "Clipboard Shuttle",
-      sync: "Sync Clipboard",
+      appName: "ShuttleLab",
+      sync: "Use Clipboard",
       about: "About",
       toggleLabel: "EN/中",
     },
