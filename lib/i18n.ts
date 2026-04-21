@@ -23,7 +23,6 @@ export type AboutSection = {
   contactEmail: string;
   supportTitle: string;
   supportDesc: string;
-  donate: Record<string, string>;
   share: Record<string, string>;
 };
 
@@ -87,17 +86,8 @@ export const translations: Record<Language, LangTranslations> = {
       contactTitle: "联系",
       contactDesc: "如有问题或建议，欢迎反馈",
       contactEmail: "邮箱",
-      supportTitle: "支持我们",
-      supportDesc: "剪贴板穿梭机为免费服务，由站长个人维护。若对您有帮助，欢迎通过以下方式支持我们继续运营：",
-      donate: {
-        title: "捐赠支持",
-        desc: "扫码或长按保存二维码，支持我们持续运营。",
-        wechat: "微信收款码",
-        alipay: "支付宝收款码",
-        paypal: "PayPal 收款码",
-        close: "关闭",
-        donate: "捐赠支持",
-      },
+      supportTitle: "与君初相识，犹如故人归",
+      supportDesc: "剪贴板穿梭机为免费服务，由站长个人维护。若对您有帮助，欢迎分享给朋友：",
       share: {
         copied: "✓ 网址已复制到剪贴板，发给好友即可",
         share: "分享给朋友",
@@ -157,17 +147,8 @@ export const translations: Record<Language, LangTranslations> = {
       contactTitle: "Contact",
       contactDesc: "For questions or feedback",
       contactEmail: "Email",
-      supportTitle: "Support Us",
-      supportDesc: "Clipboard Shuttle is free and maintained by the owner. If it helps you, consider supporting us:",
-      donate: {
-        title: "Support Us",
-        desc: "Scan or save the QR codes to support our service.",
-        wechat: "WeChat",
-        alipay: "Alipay",
-        paypal: "PayPal",
-        close: "Close",
-        donate: "Donate",
-      },
+      supportTitle: "Meeting you for the first time feels like the return of an old friend",
+      supportDesc: "Clipboard Shuttle is free and maintained by the owner. If it helps you, consider share with friends:",
       share: {
         copied: "✓ URL copied to clipboard. Send to your friend.",
         share: "Share with friends",

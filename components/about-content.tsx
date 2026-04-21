@@ -3,7 +3,6 @@
 import { Heart } from "lucide-react";
 import { useI18n } from "@/components/i18n-provider";
 import { Card, CardContent } from "@/components/ui/card";
-import { SupportDonateButton } from "@/components/support-donate";
 import { ShareButton } from "@/components/share-button";
 
 export default function AboutContent() {
@@ -165,7 +164,6 @@ export default function AboutContent() {
         </div>
         <p className="mb-8 opacity-90 text-lg leading-relaxed">{t.about.supportDesc}</p>
         <div className="flex flex-wrap gap-4">
-          <SupportDonateButton />
           <ShareButton />
         </div>
       </div>
