@@ -39,6 +39,9 @@ export const translations: Record<Language, LangTranslations> = {
       sync: "使用剪贴板",
       about: "关于",
       toggleLabel: "中/EN",
+      contact: "联系我们",
+      otherTools: "ShuttleLab 旗下其他产品",
+      allRightsReserved: "保留所有权利",
     },
     home: {
       title: "剪贴板穿梭机",
@@ -100,6 +103,9 @@ export const translations: Record<Language, LangTranslations> = {
       sync: "Use Clipboard",
       about: "About",
       toggleLabel: "EN/中",
+      contact: "Contact",
+      otherTools: "Other tools by ShuttleLab",
+      allRightsReserved: "All rights reserved.",
     },
     home: {
       title: "Clipboard Shuttle",
