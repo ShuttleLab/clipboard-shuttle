@@ -52,6 +52,9 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+  input, textarea, select {
+    font-size: max(1rem, 16px);
+  }
 }
 
 :root {
