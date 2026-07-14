@@ -2,6 +2,8 @@
 
 Sync clipboard content across phones, computers, and other devices using a shared **code**. After entering the same code on each device, text sent from one side appears on the others. On desktop you can show a QR code; on mobile you can scan to join without typing the code.
 
+**🔗 Try it live: [Sync your clipboard across devices](https://clipboard.shuttlelab.org)** — share text between phone and computer with a simple code.
+
 ## Local development
 
 ### 1. Install dependencies
