@@ -41,6 +41,9 @@ export const translations: Record<Language, LangTranslations> = {
       toggleLabel: "中/EN",
       contact: "联系我们",
       otherTools: "ShuttleLab 旗下其他产品",
+      tools: "工具",
+      toolCrossDeviceClipboard: "跨设备剪贴板",
+      toolPhoneToComputer: "手机到电脑",
       allRightsReserved: "保留所有权利",
     },
     home: {
@@ -105,6 +108,9 @@ export const translations: Record<Language, LangTranslations> = {
       toggleLabel: "EN/中",
       contact: "Contact",
       otherTools: "Other tools by ShuttleLab",
+      tools: "Tools",
+      toolCrossDeviceClipboard: "Cross-Device Clipboard",
+      toolPhoneToComputer: "Phone to Computer",
       allRightsReserved: "All rights reserved.",
     },
     home: {
