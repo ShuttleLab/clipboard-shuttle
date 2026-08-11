@@ -20,7 +20,9 @@ interface I18nContextValue {
 const I18nContext = createContext<I18nContextValue | null>(null);
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Language>("zh");
+  // Default = "en" (SSR / crawler / first client render), matching the overseas
+  // English audience. localStorage / browser language are read after mount.
+  const [lang, setLangState] = useState<Language>("en");
 
   useEffect(() => {
     const stored =
@@ -29,6 +31,15 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
         : null;
     if (stored === "zh" || stored === "en") {
       setLangState(stored);
+      document.documentElement.lang = stored === "zh" ? "zh-CN" : "en";
+      return;
+    }
+    // No saved preference → Chinese browsers get zh, everyone else keeps en.
+    const browser =
+      typeof navigator !== "undefined" ? navigator.language.toLowerCase() : "";
+    if (browser.startsWith("zh")) {
+      setLangState("zh");
+      document.documentElement.lang = "zh-CN";
     }
   }, []);
 
