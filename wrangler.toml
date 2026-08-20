@@ -1,14 +1,8 @@
 name = "clipboard-shuttle"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".vercel/output/static"
+pages_build_output_dir = "out"
 
-# 本地开发用本地 D1（wrangler:dev 时通过 CLI --d1=DB=clipboard-d1-local 绑定）
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "clipboard-d1-local"
-# database_id = "00000000-0000-0000-0000-000000000000"
-# 生产环境在 Cloudflare Dashboard Pages 项目里绑定 D1 数据库
 [[d1_databases]]
 binding = "DB"
 database_name = "clipboard-d1"

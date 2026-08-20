@@ -30,6 +30,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
         ? (localStorage.getItem("lang") as Language | null)
         : null;
     if (stored === "zh" || stored === "en") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLangState(stored);
       document.documentElement.lang = stored === "zh" ? "zh-CN" : "en";
       return;

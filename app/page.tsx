@@ -34,6 +34,7 @@ export default function HomePage() {
     const params = new URLSearchParams(window.location.search);
     const fromUrl = params.get("code")?.trim();
     if (fromUrl && CODE_REGEX.test(fromUrl)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCode(fromUrl);
       setJoined(true);
     }
@@ -67,6 +68,7 @@ export default function HomePage() {
   // 每 2 秒轮询
   useEffect(() => {
     if (!codeValid || !joined) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchLatest();
     const id = setInterval(fetchLatest, POLL_INTERVAL_MS);
     return () => clearInterval(id);
